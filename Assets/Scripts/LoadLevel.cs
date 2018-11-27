@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadLevel : MonoBehaviour
 {
     public int minimumScoreNeeded = 0;
-    public string sceneToLoad = "SampleScene"; // Gör "SampleScene" till standardvärdet 
+    public string sceneToLoad = "SampleScene"; // Gör "SampleScene" till standardvärdet på vilken scen som ska laddas
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

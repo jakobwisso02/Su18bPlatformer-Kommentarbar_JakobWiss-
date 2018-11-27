@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public static int score; // En static modifierare gör ...
+    public static int score; // En static gör att variabeln kan visas globalt i alla scripts
 
     public int amount = 1;
 
