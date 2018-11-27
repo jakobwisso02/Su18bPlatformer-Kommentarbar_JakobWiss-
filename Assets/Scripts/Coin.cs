@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public static int score; //
+    public static int score; // En static modifierare gör ...
 
     public int amount = 1;
 
@@ -12,16 +12,16 @@ public class Coin : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(0, spinSpeed * Time.deltaTime, 0); //roterar coin spriten
+        transform.Rotate(0, spinSpeed * Time.deltaTime, 0); // Roterar coin spriten varje frame
     }
 
-    //
+    // 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
-            Coin.score += amount; //lägger till amount på score 
-            Destroy(gameObject); //förstör coin sprite
+            Coin.score += amount; // Lägger till amount på score 
+            Destroy(gameObject); // Förstör coin spriten
         }
     }
 }

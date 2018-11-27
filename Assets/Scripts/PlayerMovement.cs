@@ -20,17 +20,17 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //
+        // 
         rbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rbody.velocity.y);
 
 
-        //
+        // 
         if(Input.GetButtonDown("Jump"))
         {
-            //
+            // 
             if (groundCheck.isGrounded == true)
             {
-                //
+                // 
                 rbody.velocity = new Vector2(rbody.velocity.x, jumpSpeed);
             }
         }
