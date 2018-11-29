@@ -7,14 +7,14 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 6f;
     public float jumpSpeed = 12f;
 
-    public GroundChecker groundCheck; //
+    public GroundChecker groundCheck; // 
 
-    private Rigidbody2D rbody; //
+    private Rigidbody2D rbody; // 
 
     // Use this for initialization
     void Start()
     {
-        rbody = GetComponent<Rigidbody2D>(); //
+        rbody = GetComponent<Rigidbody2D>(); // 
     }
 
     // Update is called once per frame
